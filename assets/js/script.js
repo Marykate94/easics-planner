@@ -3,7 +3,7 @@
 
 
 // when opening planner current day is displayed at top of calendar
-
+moment().format('LLLL');
 
 
 // create time blocks for standard business hours
