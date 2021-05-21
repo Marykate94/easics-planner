@@ -3,11 +3,10 @@
 
 
 // when opening planner current day is displayed at top of calendar
-var todayDate = moment().format('MMMM Do YYYY');
+var todayDate = moment().format('dddd, MMMM Do');
 console.log(todayDate);
 
 // var currentDay = "#currentDay";
-
 document.getElementById("currentDay").innerHTML = todayDate;
 // function displayDate() {
 // }
