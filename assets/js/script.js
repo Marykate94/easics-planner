@@ -20,14 +20,22 @@ document.getElementById("currentDay").innerHTML = todayDate;
 // when clicking save button for event created it saves in local storage
 // create button
 // create edit button
-var inputEl = document.querySelector("description");
-var saveBtn = inputEl.getAttribute("save-button");
-var saveButtonEl = document.createElement("button");
-saveButtonEl.textContent = "Save";
-saveButtonEl.className = "saveBtn";
-saveButtonEl.setAttribute("save-button", saveBtn);
 
-actionContainerEl.appendChild(saveButtonEl);
+$(".saveButton").click(function() {
+    // grab id's for text input elements
+    $("#input1, #input2, #input3, #input4, #input5, #input6, #input7, #input8, #input9");
+});
+console.log(".saveButton");
+
+// var inputEl = document.querySelector("description");
+// var saveBtn = inputEl.getAttribute("save-button");
+// var saveButtonEl = document.createElement("button");
+// saveButtonEl.textContent = "Save";
+// saveButtonEl.className = "saveBtn";
+// saveButtonEl.setAttribute("save-button", saveBtn);
+
+// actionContainerEl.appendChild(saveButtonEl);
+
 // create local storage 
 // var input = document.getElementById("saveServer");
 // localStorage.setItem("server", input.val());
