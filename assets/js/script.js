@@ -3,8 +3,8 @@
 
 
 // when opening planner current day is displayed at top of calendar
-moment().format('LLLL');
-
+var todayDate = moment().format('MMMM Do YYYY, h:mm:ss a');
+console.log(todayDate);
 
 // create time blocks for standard business hours
 
