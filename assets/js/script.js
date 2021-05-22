@@ -27,9 +27,17 @@ $(".saveButton").click(function() {
     var currentID = $(this).attr("id").split("-")[1]
     var userPlan = $(`#input-${currentID}`).val() //$("#input-"+currentID)
     console.log(`This is time block ${currentID} and ${userPlan}`)
-    
+    localStorage.setItem(`timeblk-${currentID}`,userPlan)
 
  });
+
+ function captureSaveEvent() {
+    for (let i=9;i <=17;i++) {
+        var timeBlock = localStorage.getItem('timeblk-'+i);
+        $('#input-'+i).val(timeBlock);
+    }
+ }
+ captureSaveEvent();
 //  console.log(".saveButton"); 
 
 // function captureSaveEvent(event) {
