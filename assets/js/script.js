@@ -32,9 +32,19 @@ $(".saveButton").click(function() {
  });
 
  function captureSaveEvent() {
+     var currentTimeBlock = moment().hours()
+     console.log(currentTimeBlock);
     for (let i=9;i <=17;i++) {
         var timeBlock = localStorage.getItem('timeblk-'+i);
         $('#input-'+i).val(timeBlock);
+        if (i>currentTimeBlock){
+            $('#input-'+i).addClass("future");
+            $(`#${i}`).addClass("future")
+        }
+        else if (i<currentTimeBlock){
+            $('#input-'+i).addClass("past");
+        }
+        else {$('#input-'+i).addClass("current");}
     }
  }
  captureSaveEvent();
