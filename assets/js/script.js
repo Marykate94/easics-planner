@@ -21,11 +21,26 @@ document.getElementById("currentDay").innerHTML = todayDate;
 // create button
 // create edit button
 
-$(".saveButton").click(function() {
-    // grab id's for text input elements
-    $("#input1, #input2, #input3, #input4, #input5, #input6, #input7, #input8, #input9");
-});
-console.log(".saveButton");
+// $(".saveButton").click(function() {
+//     // grab id's for text input elements
+//     $("#input1, #input2, #input3, #input4, #input5, #input6, #input7, #input8, #input9");
+// });
+// console.log(".saveButton"); <-- jQuery method
+
+function captureSaveEvent(event) {
+    console.log(event);
+    //variable parent div is equal to event.target.parentdiv save variable of description event.target.parentdiv.description.innertext
+    //look for the input type in the console might need to save whole parent div as a variable
+    var storeDescription = localStorage.getItem(".description",input);
+    var parentDiv = event.target.container;
+    localStorage.setItem(".description",input.val());
+}
+var saveBtn = document.getElementsByClassName("saveButton");
+for (var i = 0; i < saveBtn.length; i++) {
+    saveBtn[i].addEventListener("click", captureSaveEvent);
+
+}
+
 
 // var inputEl = document.querySelector("description");
 // var saveBtn = inputEl.getAttribute("save-button");
