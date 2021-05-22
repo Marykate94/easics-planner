@@ -39,12 +39,12 @@ $(".saveButton").click(function() {
         $('#input-'+i).val(timeBlock);
         if (i>currentTimeBlock){
             $('#input-'+i).addClass("future");
-            $(`#${i}`).addClass("future")
+            // $(`#${i}`).addClass("future")
         }
         else if (i<currentTimeBlock){
             $('#input-'+i).addClass("past");
         }
-        else {$('#input-'+i).addClass("current");}
+        else {$('#input-'+i).addClass("present");}
     }
  }
  captureSaveEvent();
