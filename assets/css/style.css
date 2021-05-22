@@ -43,7 +43,7 @@ body {
     color: #000000;
     border-top: 1px dashed #000000;
     text-align: center;
-    width: 100%
+    width: 100%;
   }
   
   .past {
@@ -69,12 +69,22 @@ body {
     color: white;
     text-align: center;
     height: 100%;
+    width: 100%;
   }
   
   .saveButton i:hover {
     font-size: 20px;
     transition: all .3s ease-in-out;
   }
+
+  /* .saveBtn {
+    border-left: 1px solid black;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+  } */
 
 
   
