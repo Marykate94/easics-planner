@@ -61,22 +61,25 @@ body {
     color: white;
   }
   
-  .saveBtn {
+  .saveButton {
     border-left: 1px solid black;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     background-color: #06AED5;
     color: white;
     text-align: center;
+    height: 100%;
   }
   
-  .saveBtn i:hover {
+  .saveButton i:hover {
     font-size: 20px;
     transition: all .3s ease-in-out;
   }
+
+
   
-  button {
-      background-color: #4CAF50; /* Green */
+  /* button {
+      background-color: #4CAF50; 
       border: none;
       color: white;
       padding: 15px 32px;
@@ -84,4 +87,4 @@ body {
       text-decoration: none;
       display: inline-block;
       font-size: 16px;
-    }
+    } */
